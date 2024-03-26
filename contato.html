@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+   
+</head>
+
+<script language="javascript" src="_javascript/funcoes.js">
+</script>
+
+<body>
+<div id="interface">
+    <header id="cabecalho">
+    <hgroup>
+    <h1>Gaming noticias</h1>
+    <h2>Tudo sobre as melhores e mais importantes noticias de industria de games você encontra aqui.</h2>
+
+    <img id="logo-ps" src="./imagem/ps-logo.png">
+    <img id="logo-xbox" src="./imagem/xbox-logo.png">
+    <img id="logo-pc" src="./imagem/pc-logo.png">
+    <img id="logo-nintendo" src="./imagem/nintendo-logo.png">
+    </hgroup>
+    <nav id="menu">
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li> <a href="https://genshin.hoyoverse.com/pt/"> Genshin impact</a></li>
+            <li><a href="https://wutheringwaves.kurogame.com/en/"> Wuthering waves</a></li>
+            <li> <a href="https://azurpromilia.com/en/home/"> Azur Promilia</a></li>
+            <li> <a href="./contato.html"> Contato</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+
+<form method="post" id="fContato" action="maito:hellsrag2@gmail.com" oninput="calc_total();">
+<fieldset id="usuario"><legend>
+Identificação do Usuário</legend>
+    <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Nome Completo"></p>
+    <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="10" maxlength="8" placeholder="Digite 8 dígitos"></p>
+    <p><label for="cEmail">E-mail:</label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="Digite seu E-mail"></p>
+    
+
+    <fieldset id="sexo"><legend>Sexo</legend>
+        <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label><br>
+        <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+    
+</fieldset>
+
+<p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc"></p>
+</fieldset>
+
+<fieldset id="endereco"><legend>
+    Endereço do Usuário</legend>
+    <p><label for="cRua"> Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua/Av/travessa/etc."></p>
+    <p><label for="cNum"> Número:</label><input type="number" name="tNum" id="cNum" size="10" maxlength="8" placeholder="N° da Residência"> </p>
+    <p><label for="cEst">Estado:</label><select name="tEst" id="cEst">
+        <option>AC</option>
+        <option>AL</option>
+        <option>AP</option>
+        <option>AM</option>
+        <option>BA</option>
+        <option>CE</option>
+        <option>ES</option>
+        <option>GO</option>
+        <option>MA</option>
+        <option>MT</option>
+        <option>MS</option>
+        <option>MG</option>
+        <option>PA</option>
+        <option>PB</option>
+        <option>PR</option>
+        <option>PE</option>
+        <option>PI</option>
+        <option>RJ</option>
+        <option>RN</option>
+        <option>RS</option>
+        <option>RO</option>
+        <option>RR</option>
+        <option>SC</option>
+        <option>SP</option>
+        <option>SE</option>
+        <option>TO</option>
+        <option>DF</option>
+
+    </select></p>
+    <p><label for="cCid">Cidade:<input type="text" name="tCid" id="cCid" size="25" maxlength="40" placeholder="Digite o nome da sua Cidade"></label></p>
+</fieldset>
+
+<fieldset id="mensagem"><legend>
+    Mensagem do Usuário</legend>
+    <p><label for="cUrg"> Grau de Urgência:</label>&nbsp; Min<input type="range" name="tUrg" id="cUrg" min="0" max="10">Máx</p>
+    <p><label for="cMsg"> Mensagem:</label><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem" style="resize: none;"></textarea> </p>
+</fieldset>
+<button type="submit">Enviar</button>
+
+</form>
+
+<footer id="rodape1">
+<p>Copyright&copy; 2024 - Bruno Eduardo Oliveira Mendes<br/>
+<a id="footy" href="http://facebook.com" target="_blank"> Facebook</a> |<a id="footy" href="http://Twitter.com" target="_blank"> Twitter</a></p>
+</footer>
+
+</div>
+</body>
+</html>

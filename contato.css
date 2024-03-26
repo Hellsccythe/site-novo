@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+form {
+	width: 500px;
+	margin: 200px auto 0px auto;
+}
+
+ textarea,input, label {
+	color: white;
+	font-size: 13pt;
+	font-family: "Lobster", sans-serif;
+	font-weight: normal;
+	
+}
+
+input#cNasc {
+	background-color: black;
+}
+
+input#cNasc:hover {
+	background-color: #dddddd;
+}
+
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+}
+
+legend {
+	color: white;
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: "Lobster", sans-serif;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
+}
+
+fieldset#sexo {
+	width: 150px;
+}
+
+
+button {
+	margin-left: 400px;
+}
+
+/*rodapé*/
+
+footer#rodape1 {
+	clear: both;
+	border-top: 1px solid #a89dbd;
+	background-color: 	rgba(81, 58, 123, 0.5);
+	margin: 20px 73px -50px 110px;
+
+}
+
+footer#rodape1 p {
+	text-align: center;
+	color: white;
+}
+
+footer a#footy {
+	color: white;
+	text-decoration: none;
+}
+
+footer a#footy:hover {
+	color: white;
+	text-decoration: underline;
+}
